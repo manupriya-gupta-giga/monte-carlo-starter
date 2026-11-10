@@ -61,6 +61,10 @@ The script also computes two deliberately incorrect examples, omitting discounti
 - Increase the strike using identical random draws. Explain why the call payoffs cannot increase.
 - Compare 100,000 ordinary payoffs with 50,000 antithetic pairs at the same payoff-evaluation budget.
 
+## Audience challenges beyond Black–Scholes
+
+See [CHALLENGES.md](CHALLENGES.md) for an Asian call, a custom floating-rate note with coupon memory, and validation without a product-specific closed form. Run `python rate_challenges.py` for the runnable rate reference and checks.
+
 ## Model and interpretation
 
 This is a no-dividend, constant-rate, constant-volatility Black–Scholes model with frictionless continuous trading assumptions. It uses risk-neutral drift `r`, not a prediction of stock returns. Terminal-only sampling is sufficient for this European payoff and avoids time-grid discretization error under this model.
